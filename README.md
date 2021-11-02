@@ -36,16 +36,17 @@ This will boot up a local server for Flask (on port 5000) and React (on port 300
 
     git clone https://github.com/magnitis/pokemon-search-engine.git
     cd pokemon-search-engine
-    pip install -r api/requirements.txt
+    pip install -r backend/requirements.txt
 
+**IMPORTANT:** Before running manually make sure to change in [package.json](https://github.com/magnitis/pokemon-search-engine/blob/master/frontend/package.json) the proxy server from ```"proxy": "http://backend:5000/"``` to ```"proxy": "http://localhost:5000/"``` .
 
 To spin up the front-end run
 
-    cd client && yarn start
+    cd frontend && yarn start
 
 Then to spin up the back-end, open a new terminal and run
 
-    cd client && yarn start-api
+    cd frontend && yarn start-api
 
 The app will be running in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
@@ -54,9 +55,9 @@ The app will be running in development mode. Open [http://localhost:3000](http:/
 
 React front-end. Launches the test runner in the interactive watch mode.
 
-    cd client && yarn test
+    cd frontend && yarn test
 
 Flask back-end. Running both unit and integration tests.
 
-    cd api && pytest -q tests
+    cd backend && pytest -q tests
 
