@@ -12,13 +12,13 @@ Make sure you have [Docker desktop](https://www.docker.com/products/docker-deskt
 
 Create a local copy of this repository and run
 
-    % docker-compose build
+    docker-compose build
 
 This spins up Compose and builds a local development environment according to the specifications in [docker-compose.yml](https://github.com/magnitis/pokemon-search-engine/blob/master/docker-compose.yml). Keep in mind that this file contains settings for development, and not production.
 
 After the containers have been built (this may take a few minutes), run
 
-    % docker-compose up
+    docker-compose up
 
 This will boot up a local server for Flask (on port 5000) and React (on port 3000). Open [http://localhost:3000](http://localhost:3000) to view the search engine in the browser.
 
@@ -34,18 +34,18 @@ This will boot up a local server for Flask (on port 5000) and React (on port 300
 
 #### Installation
 
-    % git clone https://github.com/magnitis/pokemon-search-engine.git
-    % cd pokemon-search-engine
-    % pip install -r api/requirements.txt
+    git clone https://github.com/magnitis/pokemon-search-engine.git
+    cd pokemon-search-engine
+    pip install -r api/requirements.txt
 
 
 To spin up the front-end run
 
-    % yarn start
+    yarn start
 
 Then to spin up the back-end, open a new terminal and run
 
-    % yarn start-api
+    yarn start-api
 
 The app will be running in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
@@ -54,9 +54,9 @@ The app will be running in development mode. Open [http://localhost:3000](http:/
 
 React front-end. Launches the test runner in the interactive watch mode.
 
-    % yarn test
+    yarn test
 
 Flask back-end. Running both unit and integration tests,
 
-    % pytest -q api/tests
+    pytest -q api/tests
 
