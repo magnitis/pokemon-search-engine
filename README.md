@@ -4,7 +4,9 @@ Simple search engine which given a valid Pokemon name, returns its Shakespearean
 
 ## Overview
 
-This project is developed with a **React** front-end (*Node.js v16*) and a **Flask** API back-end (*Python 3.9*). The front-end connects to the back-end by making HTTP requests for desired data. React and Flask are containerized and managed with **Docker Compose**.
+This project is developed with a **React** front-end (*Node.js v16*) and a **Flask** API back-end (*Python 3.9*). The front-end connects to the back-end by making HTTP requests for desired data. React and Flask are containerized and managed with **Docker Compose**. 
+
+The back-end API retrieves the initial Pokemon description from https://pokeapi.co/api/v2/pokemon-species/{id or name}/ and translates it from https://api.funtranslations.com/translate/ .
 
 ### How to run with Docker
 
