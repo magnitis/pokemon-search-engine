@@ -41,11 +41,11 @@ This will boot up a local server for Flask (on port 5000) and React (on port 300
 
 To spin up the front-end run
 
-    yarn start
+    cd client && yarn start
 
 Then to spin up the back-end, open a new terminal and run
 
-    yarn start-api
+    cd client && yarn start-api
 
 The app will be running in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
@@ -54,9 +54,9 @@ The app will be running in development mode. Open [http://localhost:3000](http:/
 
 React front-end. Launches the test runner in the interactive watch mode.
 
-    yarn test
+    cd client && yarn test
 
-Flask back-end. Running both unit and integration tests,
+Flask back-end. Running both unit and integration tests.
 
-    pytest -q api/tests
+    cd api && pytest -q tests
 
