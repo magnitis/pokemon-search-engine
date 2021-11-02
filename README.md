@@ -1,10 +1,28 @@
-# Getting Started with Create React App
+# Pokemon Search Engine
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Simple search engine which given a valid Pokemon name, returns its Shakespearean description.
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+This project is developed with a **React** front-end (Node.js v16) and a **Flask** API back-end (Python 3.9). The front-end connects to the back-end by making HTTP requests for desired data. React and Flask are containerized and managed with **Docker Compose**.
+
+### How to run with Docker
+
+Make sure you have [Docker desktop](https://www.docker.com/products/docker-desktop) or [Docker](https://www.docker.com/) installed.
+
+Create a local copy of this repository and run
+
+```docker-compose build```
+
+This spins up Compose and builds a local development environment according to our specifications in [docker-compose.yml](https://github.com/magnitis/pokemon-search-engine/blob/master/docker-compose.yml). Keep in mind that this file contains settings for development, and not production.
+
+After the containers have been built (this may take a few minutes), run
+
+```docker-compose up```
+
+This one command boots up a local server for Flask (on port 5000) and React (on port 3000). Open [http://localhost:3000](http://localhost:3000) to view the search engine in the browser.
+
+### How to run manually
 
 ### `yarn start`
 
