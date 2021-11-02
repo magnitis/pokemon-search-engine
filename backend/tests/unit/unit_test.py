@@ -1,4 +1,4 @@
-from api.api import pokemon_api, shakespeare_api
+from backend.api import pokemon_api, shakespeare_api
 import pytest
 
 @pytest.mark.parametrize("pokemon_name, content, code",[

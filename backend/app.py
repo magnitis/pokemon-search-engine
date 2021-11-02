@@ -1,5 +1,5 @@
 from flask import Flask
-from api.api import api
+from backend.api import api
 
 
 def create_app(settings_overrides=None):
